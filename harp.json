@@ -1,6 +1,6 @@
 {
   "globals": {
-    "baseUrl": "",
+    "baseUrl": "http://codeparkhouston.com/blog",
     "name": "Code Park Blog",
     "homepage": "http://codeparkhouston.com"
   }
