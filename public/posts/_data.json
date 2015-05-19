@@ -3,7 +3,8 @@
         "slug"  : "hackathon-fun",
         "title" : "Hackathon Fun",
         "date"  : "05/18/2015",
-        "author": "amanda"
+        "author": "amanda",
+        "tags"  : ["hackathon", "backbone"]
     },
     "teaching-git-part-i": {
         "slug"  : "teaching-git-part-i",
