@@ -1,7 +1,13 @@
 {
-    "ascii-art-class": {
-        "slug"  : "ascii-art-class",
-        "title" : "Building a class about ASCII art",
+    "hackathon-fun": {
+        "slug"  : "hackathon-fun",
+        "title" : "Hackathon Fun",
+        "date"  : "05/18/2015",
+        "author": "amanda"
+    },
+    "teaching-git-part-i": {
+        "slug"  : "teaching-git-part-i",
+        "title" : "Lessons from teaching git",
         "date"  : "05/18/2015",
         "author": "amanda"
     }
