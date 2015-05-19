@@ -1,0 +1,59 @@
+@import "_bootstrap";
+@import "_variables";
+
+html, body, .main-content {
+    height: 100%;
+}
+
+.logo-wrap() {
+    font-family: 'Muli';
+    &::before {
+        content: "{";
+        color: @brand-primary;
+    }
+    &::after {
+        content: "}";
+        color: @brand-primary;
+    }
+}
+
+.logo {
+    color: @brand-success;
+
+    .logo-wrap();
+}
+
+.author {
+    &::before {
+        content: "> ";
+        color: @brand-success;
+    }
+}
+
+.date {
+    text-align: right;
+    display: block;
+    border-bottom: 1px solid @brand-primary;
+    margin-top: -2em;
+    margin-bottom: 2em;
+}
+
+.post {
+    font-size: 20px;
+    line-height: 2em;
+
+    p {
+        margin-bottom: 2em;
+    }
+}
+
+aside {
+    opacity: 0.5;
+    text-align: center;
+    .transition(opacity 0.5s);
+    position: fixed;
+
+    &:hover {
+        opacity: 1;
+    }
+}

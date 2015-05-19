@@ -1,0 +1,34 @@
+//
+// Site specific styles
+//
+// First imports the theme and then allows you to
+// add your custom styles
+//
+// You can use all Bootstrap variables and mixins
+// that are provided by the theme
+//
+// --------------------------------------------------
+
+// Import flat bootstrap theme
+@import "themes/codepark/theme";
+
+body{
+  padding-top: 20px;
+}
+
+footer{
+  margin: @grid-gutter-width 0 0 0;
+  padding: (@grid-gutter-width / 2) 0;
+  border-top: 1px solid @well-border;
+  text-align: center;
+  background: @brand-primary;
+  color: @brand-success;
+
+  a {
+    color: @brand-success;
+  }
+
+  small {
+    font-size: 0.75em;
+  }
+}
