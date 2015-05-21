@@ -1,6 +1,6 @@
 {
   "globals": {
-    "baseUrl": "http://codeparkhouston.com/blog",
+    "baseUrl": "http://localhost:9000",
     "name": "Code Park Blog",
     "title": "Code Park Blog",
     "homepage": "http://codeparkhouston.com"

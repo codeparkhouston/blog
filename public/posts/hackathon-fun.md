@@ -12,7 +12,12 @@ Getting the development environment set up on different systems took a bit of ti
   * Drawing an icon to represent bugs found during inspection in Sketch
 
 ### Lessons Learned
-
 Organizing the frontend using the concept of an ["Orchestrator"](https://code.mixpanel.com/2015/04/08/straightening-our-backbone-a-lesson-in-event-driven-ui-development/) was very helpful.  Not only did it help us split up the page into separate views which helped with dividing the work, it made it clear how to get different components to talk to each other.
 
-We struggled with how best to handle the static data.  We wanted to maximize our return for our efforts.  After some data reshaping and wrangling together a Python script to JSON-ify our data, we imported it into a MongoDB.
+We struggled with how best to handle the static data.  We wanted to maximize our return for our efforts and we did not have someone dedicated to building out our backend.  After some data reshaping and wrangling together a Python script to JSON-ify our data, we imported it into a MongoDB.  While I think it would've been really nice to build out a great API for accessing this data so that other applications can use it, this was not our priority.
+
+Overall, the hackathon was a really fun time!  There were 200 + people in attendance throughout the weekend, ~30 interesting and creative projects, and even some interactive maps -- analog ones!
+
+![A map with pins and string connecting attendees' commutes](../images/hackathon-fun/map-pins.jpg)
+
+
