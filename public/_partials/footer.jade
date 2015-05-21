@@ -9,3 +9,13 @@ small Powered by
     | by
     = ' '
     a(href="http://www.jvandemo.com") Jurgen Van de Moere
+
+script(type='text/javascript').
+    var links = document.querySelectorAll('a');
+    links = Array.prototype.slice.call(links, 0);
+
+    links.forEach(function(link){
+        if(link.href.match(window.location.origin) == null){
+            link.target = '_blank'
+        }    
+    })

@@ -31,21 +31,49 @@ html, body, .main-content {
 }
 
 .date {
-    text-align: right;
-    display: block;
-    border-bottom: 1px solid @brand-primary;
-    margin-top: -2em;
+    float: right;
+    display: inline-block;
     margin-bottom: 2em;
 }
 
 .post {
+    margin-bottom: 3em;
+}
+
+.content {
+    margin-top: 1em;
     font-size: 20px;
     line-height: 2em;
 
-    p {
+    p:not(:last-child) {
         margin-bottom: 2em;
     }
+    p + ul {
+        margin-top: -2em;
+    }
 }
+
+.title {
+    border-bottom: 1px solid @brand-primary;
+    display: block;
+    position: relative;
+
+}
+
+a.title {
+    &:hover {
+        color: @brand-success;
+
+        &::after {
+            content: 'Read more...';
+            position: absolute;
+            bottom: 0.5em;
+            right: 0;
+            color: @brand-success;
+        }
+    }
+}
+
 
 aside {
     opacity: 0.5;

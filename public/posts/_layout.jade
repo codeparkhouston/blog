@@ -1,0 +1,28 @@
+- var slug = current.source;
+- var post = public.posts._data[slug];
+- post.yield = partial('./' + slug);
+
+doctype html
+html
+  head
+    != partial("../_partials/head")
+
+  body(class="page-#{ current.path[0] } #{ current.path.join('-') }")
+
+    .container
+      .row
+        header.col-xs-12
+          != partial("../_partials/header")
+
+    .container.main-content
+      .row
+        main.col-xs-12.col-md-8
+          article.post
+            != partial("../_partials/post", post)
+
+        aside.col-md-3.col-md-offset-1
+          != partial("../_partials/aside")
+    .container-fluid
+      .row
+        footer.col-xs-12
+          != partial("../_partials/footer")

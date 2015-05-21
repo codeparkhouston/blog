@@ -2,6 +2,7 @@
   "globals": {
     "baseUrl": "http://codeparkhouston.com/blog",
     "name": "Code Park Blog",
+    "title": "Code Park Blog",
     "homepage": "http://codeparkhouston.com"
   }
 }

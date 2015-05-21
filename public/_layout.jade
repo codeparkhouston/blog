@@ -1,24 +1,4 @@
-doctype html
-html
-    head
-        != partial("_partials/head")
+extends _template
 
-    body(class="page-#{ current.path[0] } #{ current.path.join('-') }")
-
-        .container
-            .row
-                header.col-xs-12
-                    != partial("_partials/header")
-
-        .container.main-content
-            .row
-                main.col-xs-12.col-md-8
-                    article
-                        != yield
-                aside.col-md-3.col-md-offset-1
-                    != partial("_partials/aside")
-
-        .container-fluid
-            .row
-                footer.col-xs-12
-                    != partial("_partials/footer")
+block content
+  != yield

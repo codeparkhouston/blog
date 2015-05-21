@@ -1,7 +1,10 @@
-h2.title: a(href="#{baseUrl}/posts/#{slug}")= title
+- if(current.source == slug)
+  div.title: h2= title
+- else
+  a(href="#{baseUrl}/posts/#{slug}").title: h2= title
 
 i.date= date
 
-.post
-  != partial("./post-body/" + slug)
-p.author: a(href= "https://github.com/" + public.authors._data[author].github, target="_blank")= public.authors._data[author].display
+.content
+  != yield
+!= partial("./author", {author: author})
